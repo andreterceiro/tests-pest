@@ -20,3 +20,11 @@ test('subtract', function () {
     expect($result)->toBe(1);
 });
   
+test('request test', function() {
+    $response = file_get_contents("http://www.terceiro.com.br");
+    $assertionResponse = false;
+    if (strpos($response, 'andreterceiro') > 0) {
+        $assertionResponse = true;
+    }
+    expect($assertionResponse)->toBe(true); // redirect to Github Pages
+});

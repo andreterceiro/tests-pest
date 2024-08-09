@@ -1,0 +1,22 @@
+{
+    "name": "andreterceiro/tests-pest",
+    "autoload": {
+        "psr-4": {
+            "Andreterceiro\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "André de Paula Terceiro",
+            "email": "andreterceiro@yahoo.com.br"
+        }
+    ],
+    "require-dev": {
+        "pestphp/pest": "^2.35"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
